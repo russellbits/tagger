@@ -3,26 +3,18 @@
 	export let highlight;
 </script>
 
-<div>
-	<h2>Articles</h2>
-	<ul>
-		{#each data.articles as article}
-			{#if article.id == highlight}
-				<li class="highlight"><a href="#">{article.title}</a></li>
-			{:else}
-				<li><a href="#">{article.title}</a></li>
-			{/if}
-		{/each}
-	</ul>
-</div>
+<h2>Articles</h2>
+<ul>
+	{#each data.articles as article}
+		{#if article.id == highlight}
+			<li class="highlight"><a href="#">{article.title}</a></li>
+		{:else}
+			<li><a href="#">{article.title}</a></li>
+		{/if}
+	{/each}
+</ul>
 
 <style>
-	h2 {
-		color: white;
-		font-family: 'Roboto Condensed', 'Helvetica', sans-serif;
-		font-size: 1.8em;
-		text-transform: uppercase;
-	}
 	ul {
 		list-style-type: none;
 		margin: 0;
