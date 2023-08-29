@@ -1,5 +1,16 @@
 <script>
 	//import logo from '/images/bilby-logo.svg';
+	export let location = '';
+	export let isHome = false;
+	$: if (location !== '/') {
+		isHome = true;
+	}
+	import Button from '$lib/components/Button.svelte';
+
+	import { goto } from '$app/navigation';
+	function routeToPage(route) {
+		goto(`${route}`);
+	}
 </script>
 
 <header>
@@ -12,7 +23,10 @@
 	<div class="greeting">Hi, Russell!</div>
 
 	<nav>
-		<button> Sign Out </button>
+		{#if !isHome}
+			<Button label={'Home'} on:click={routeToPage('/')} />
+		{/if}
+		<Button label={'Sign Out'} />
 	</nav>
 </header>
 
@@ -21,6 +35,7 @@
 		color: white;
 		display: flex;
 		justify-content: space-between;
+		align-items: center;
 		background-color: black;
 	}
 
@@ -30,7 +45,7 @@
 
 	.greeting {
 		font-family: 'IBM Plex Serif', 'Georgia', serif;
-		font-size: 2em;
+		font-size: 1.5em;
 		display: flex;
 		justify-content: left;
 	}
