@@ -1,6 +1,6 @@
 <script>
 	import '../house.css';
-	import Header from '../components/Header.svelte';
+	import Header from '$lib/components/Header.svelte';
 	export let data;
 </script>
 

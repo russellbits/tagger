@@ -39,3 +39,9 @@
 	src: local(''), url('/fonts/inter-bolditalic-webfont.woff2') format('woff2'),
 		url('/fonts/inter-bolditalic-webfont.woff') format('woff');
 }
+
+/* global.css */
+body {
+	padding: 0;
+	margin: 0;
+}
