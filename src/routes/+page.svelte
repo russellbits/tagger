@@ -10,3 +10,10 @@
 		<li>{article.title}</li>
 	{/each}
 </ul>
+
+<ul>
+	<pre>{JSON.stringify(data)}</pre>
+	{#each data.labels as label}
+		<li>{label.name}</li>
+	{/each}
+</ul>
