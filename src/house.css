@@ -73,6 +73,7 @@ h3,
 h4 {
 	font-family: 'IBM Plex Serif', 'Georgia', serif;
 	font-weight: 400;
+	margin: 0;
 }
 
 h1 {
@@ -80,7 +81,10 @@ h1 {
 }
 
 h2 {
-	font-size: 1.7em;
+	color: white;
+	font-family: 'Roboto Condensed', 'Helvetica', sans-serif;
+	font-size: 1.4em;
+	text-transform: uppercase;
 }
 
 h3 {

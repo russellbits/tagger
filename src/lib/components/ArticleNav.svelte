@@ -17,12 +17,6 @@
 </div>
 
 <style>
-	h2 {
-		color: white;
-		font-family: 'Roboto Condensed', 'Helvetica', sans-serif;
-		font-size: 1.8em;
-		text-transform: uppercase;
-	}
 	ul {
 		list-style-type: none;
 		margin: 0;

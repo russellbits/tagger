@@ -19,12 +19,6 @@
 </div>
 
 <style>
-	h2 {
-		color: white;
-		font-family: 'Roboto Condensed', 'Helvetica', sans-serif;
-		font-size: 1.8m;
-		text-transform: uppercase;
-	}
 	ul {
 		list-style-type: none;
 		margin: 0;
@@ -37,16 +31,13 @@
 		text-transform: uppercase;
 		line-height: 1em;
 		min-height: calc((0.8 * 3)+ (1.4 * 3));
-		padding: 1em 0.4em;
-		border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+		padding: 0.4em;
 	}
 	li:hover {
 		background-color: rgba(0, 169, 10, 1);
-		border-radius: 5px;
 	}
 	li.highlight {
 		background-color: rgba(0, 169, 10, 1);
-		border-radius: 5px;
 	}
 	a {
 		color: white;
