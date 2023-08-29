@@ -1,0 +1,70 @@
+/* fonts.css */
+
+@font-face {
+	font-family: 'IBM Plex Sans SemiBold';
+	font-weight: 600;
+	src: local(''), url('/fonts/ibmplexsans-semibold-webfont.woff2') format('woff2'),
+		url('/fonts/ibmplexsans-semibold-webfont.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'IBM Plex Sans Bold';
+	font-style: bold;
+	font-weight: 700;
+	src: local(''), url('/fonts/ibmplexsans-bold-webfont.woff2') format('woff2'),
+		url('/fonts/ibmplexsans-bold-webfont.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'IBM Plex Serif';
+	font-style: normal;
+	font-weight: 400;
+	src: local(''), url('/fonts/ibmplexserif-regular-webfont.woff2') format('woff2'),
+		url('/fonts/ibmplexserif-regular-webfont.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Inter';
+	font-style: bold;
+	font-weight: 700;
+	src: local(''), url('/fonts/inter-bold-webfont.woff2') format('woff2'),
+		url('/fonts/inter-bold-webfont.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Inter Bold Italic';
+	font-style: bold-italic;
+	font-weight: 700;
+	src: local(''), url('/fonts/inter-bolditalic-webfont.woff2') format('woff2'),
+		url('/fonts/inter-bolditalic-webfont.woff') format('woff');
+}
+
+/* global.css */
+:root {
+	font-size: 18px;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	font-family: 'IBM Plex Serif', 'Georgia', serif;
+	font-weight: 400;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+h2 {
+	font-size: 1.7em;
+}
+
+h3 {
+	font-size: 1.5em;
+}
