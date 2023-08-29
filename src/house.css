@@ -39,12 +39,30 @@
 		url('/fonts/inter-bolditalic-webfont.woff') format('woff');
 }
 
+@font-face {
+	font-family: 'Roboto Condensed';
+	font-style: normal;
+	font-weight: 400;
+	src: local(''), url('/fonts/robotocondensed-regular-webfont.woff2') format('woff2'),
+		url('/fonts/robotocondensed-regular-webfont.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Roboto Condensed Bold';
+	font-style: normal;
+	font-weight: 700;
+	src: local(''), url('/fonts/robotocondensed-bold-webfont.woff2') format('woff2'),
+		url('/fonts/robotocondensed-bold-webfont.woff') format('woff');
+}
+
 /* global.css */
 :root {
 	font-size: 18px;
 }
 
 body {
+	color: white;
+	background-color: rgba(33, 33, 33, 1);
 	padding: 0;
 	margin: 0;
 }
