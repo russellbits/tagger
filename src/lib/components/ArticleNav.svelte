@@ -33,8 +33,12 @@
 		font-size: 0.8em;
 		line-height: 1.4em;
 		min-height: calc((0.8 * 3)+ (1.4 * 3));
-		padding: 1em 0;
+		padding: 1em 0.4em;
 		border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+	}
+	li:hover {
+		background-color: rgba(0, 169, 10, 1);
+		border-radius: 5px;
 	}
 	li.highlight {
 		background-color: rgba(0, 169, 10, 1);
