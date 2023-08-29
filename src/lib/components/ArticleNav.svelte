@@ -3,18 +3,16 @@
 	export let highlight;
 </script>
 
-<div>
-	<h2>Articles</h2>
-	<ul>
-		{#each data.articles as article}
-			{#if article.id == highlight}
-				<li class="highlight"><a href="#">{article.title}</a></li>
-			{:else}
-				<li><a href="#">{article.title}</a></li>
-			{/if}
-		{/each}
-	</ul>
-</div>
+<h2>Articles</h2>
+<ul>
+	{#each data.articles as article}
+		{#if article.id == highlight}
+			<li class="highlight"><a href="#">{article.title}</a></li>
+		{:else}
+			<li><a href="#">{article.title}</a></li>
+		{/if}
+	{/each}
+</ul>
 
 <style>
 	ul {
