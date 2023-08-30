@@ -3,7 +3,6 @@ import { supabase } from '$lib/supabaseClient';
 export async function load() {
 	const { data: articles } = await supabase.from('articles').select();
 	const { data: labels } = await supabase.from('labels').select();
-	// console.log(labels);
 	const uniqueLabels = labels.reduce((accumulator, label) => {
 		const name = label.name;
 
@@ -15,7 +14,6 @@ export async function load() {
 		return accumulator;
 	}, []);
 
-	// console.log(uniqueLabels);
 	return {
 		articles: articles ?? [],
 		labels: uniqueLabels ?? []

@@ -17,7 +17,7 @@
 		<ArticleNav {data} highlight={4} />
 	</div>
 	<div class="article-display">
-		<ArticleDisplay />
+		<ArticleDisplay {data} title={'I say so.'} />
 	</div>
 </main>
 

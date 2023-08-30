@@ -1,6 +1,7 @@
 <script>
 	import Button from './Button.svelte';
 	export let data;
+	export let n = 'follow';
 </script>
 
 <div class="tag-input">
@@ -8,12 +9,13 @@
 	<button class="add">+</button>
 	<Button label={'Suggest Tags'} />
 </div>
+<pre>FAIL: {data}</pre>
 <div>
 	<Button label={'Party'} type={'add'} /><Button label={'Government'} type={'add'} />
 </div>
 
 <article>
-	<h1>How China became big business for Twitter</h1>
+	<h1>How {n} became big business for Twitter</h1>
 	<Button label={'x | China'} type={'remove'} /><Button label={'x | Twitter'} type={'remove'} />
 	<p>
 		A Reuters review of publicly available government tenders, budget documents and promoted tweets
