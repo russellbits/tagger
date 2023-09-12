@@ -1,38 +1,7 @@
-# create-svelte
+# Article Tagging system
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+## Technical Task
 
-## Creating a project
+The task is to create a simple web application. The web application is a low-fi, toy version of a tool like prodi.gy that enables humans to create training sets for NLP-based machine learning models. Specifically, the web app should enable the user to apply “labels” to “documents”. Here, both a “labels” and a “documents” are defined to be arbitrary strings. In practice, the “label” will usually describe some feature of the “document”.
 
-If you're seeing this, you've probably already done this step. Congrats!
-
-```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+## Run Instructions

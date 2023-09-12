@@ -7,14 +7,20 @@
 <ul>
 	{#each data.articles as article}
 		{#if article.id == highlight}
-			<li class="highlight"><a href="#">{article.title}</a></li>
+			<li class="highlight"><a href={`article/${article.slug}`}>{article.title}</a></li>
 		{:else}
-			<li><a href="#">{article.title}</a></li>
+			<li><a href={`article/${article.slug}`}>{article.title}</a></li>
 		{/if}
 	{/each}
 </ul>
 
 <style>
+	h2 {
+		font-family: 'Roboto Condensed', 'Helvetica', sans-serif;
+		font-size: 28px;
+		text-transform: uppercase;
+		padding-left: 0.5em;
+	}
 	ul {
 		list-style-type: none;
 		margin: 0;

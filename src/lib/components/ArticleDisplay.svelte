@@ -1,7 +1,6 @@
 <script>
 	import Button from './Button.svelte';
 	export let data;
-	export let n = 'follow';
 </script>
 
 <div class="tag-input">
@@ -9,19 +8,16 @@
 	<button class="add">+</button>
 	<Button label={'Suggest Tags'} />
 </div>
-<pre>FAIL: {data}</pre>
+<pre>{JSON.stringify(data)}</pre>
 <div>
 	<Button label={'Party'} type={'add'} /><Button label={'Government'} type={'add'} />
 </div>
 
 <article>
-	<h1>How {n} became big business for Twitter</h1>
+	<h1>{data.props.article.title}</h1>
 	<Button label={'x | China'} type={'remove'} /><Button label={'x | Twitter'} type={'remove'} />
 	<p>
-		A Reuters review of publicly available government tenders, budget documents and promoted tweets
-		from 2020 to 2022 shows local government authorities and Chinese Communist Party propaganda
-		offices for cities, provinces and even districts across the country have flocked to Twitter to
-		buy ads.
+		{data.props.article.summary}
 	</p>
 </article>
 

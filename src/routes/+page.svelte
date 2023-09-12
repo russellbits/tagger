@@ -17,7 +17,9 @@
 		<ArticleNav {data} highlight={4} />
 	</div>
 	<div class="article-display">
-		<ArticleDisplay {data} title={'I say so.'} />
+		<pre>{JSON.stringify(data)}</pre>
+		<!-- For root route, don't dispkay article? -->
+		<!-- <ArticleDisplay {data} title={'I said so.'} /> -->
 	</div>
 </main>
 
@@ -45,10 +47,5 @@
 		padding: 0.45em 1em;
 		height: 100vh;
 		width: 70vw;
-	}
-	h2 {
-		font-family: 'Roboto Condensed', 'Helvetica', sans-serif;
-		font-size: 28px;
-		text-transform: uppercase;
 	}
 </style>
